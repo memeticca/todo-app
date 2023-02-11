@@ -1,0 +1,21 @@
+@use "../../variables/color-palettes" as colors;
+
+.todo__main {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: colors.$c2;
+
+  hr {
+    margin: 20px;
+    border: 1px solid colors.$c4;
+  }
+
+  .todo-style {
+    padding: 0;
+  }
+
+  .todo-main-list__todo-title {
+    width: 550px;
+    word-wrap: break-word;
+  }
+}

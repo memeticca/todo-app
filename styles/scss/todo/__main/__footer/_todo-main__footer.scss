@@ -1,0 +1,21 @@
+@use "../../../variables/color-palettes" as colors;
+
+.todo-main__footer {
+  display: flex;
+  vertical-align: bottom;
+  justify-content: space-between;
+  color: colors.$c4;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: colors.$c3;
+  }
+
+  a.active {
+    color: colors.$c5;
+  }
+}

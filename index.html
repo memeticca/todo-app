@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/css/style.css" />
+  </head>
+
+  <body>
+    <div class="todo">
+      <div class="todo__header">
+        <h1>TODO</h1>
+        <button class="todo-header__toggle-color">
+          <img src="images/icon-sun.svg" />
+        </button>
+      </div>
+
+      <div class="todo-style">
+        <input type="checkbox" />
+        <input type="text" placeholder="Create a new todo..." />
+      </div>
+
+      <div class="todo__main">
+        <div class="todo-main__list">
+          <div class="todo-style">
+            <input type="checkbox" />
+            <p class="todo-main-list__todo-title">Complete online JavaScript course</p>
+          </div>
+        </div>
+        <hr>
+        <div class="todo-main__footer">
+          <p id="items-count">0 items left</p>
+          <div class="todo-main-footer__filters">
+            <a class="active">All</a>
+            <a>Active</a>
+            <a>Completed</a>
+          </div>
+          <a>Clear Completed</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

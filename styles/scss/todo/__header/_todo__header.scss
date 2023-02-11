@@ -1,0 +1,21 @@
+.todo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+
+    img {
+      width: 25px;
+    }
+  }
+}
