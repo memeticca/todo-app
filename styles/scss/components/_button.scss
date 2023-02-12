@@ -1,0 +1,14 @@
+@use "../variables/color-palettes" as colors;
+
+button {
+  font-weight: bold;
+  font-size: 16px;
+  color: colors.$c4;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: colors.$c3;
+  }
+}

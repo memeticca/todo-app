@@ -1,0 +1,20 @@
+@use "../../variables/color-palettes" as colors;
+
+.todo__filters {
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: colors.$c4;
+
+  @media screen and (max-width: 625px) {
+    position: static;
+    transform: translate(0, 0);
+
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: colors.$c2;
+    border-radius: 10px;
+  }
+}

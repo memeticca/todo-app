@@ -1,0 +1,48 @@
+@use "../variables/color-palettes" as colors;
+
+input {
+  &[type="text"] {
+    width: 100%;
+    appearance: none;
+    font-size: inherit;
+    color: colors.$c3;
+    background-color: transparent;
+    border: none;
+
+    &::placeholder {
+      color: colors.$c4;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+
+    appearance: none;
+    text-align: center;
+    border: 1px solid colors.$c4;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid colors.$c5;
+    }
+
+    &:checked {
+      background-image: linear-gradient(
+        135deg,
+        rgba(0, 212, 255, 1) 0%,
+        rgba(223, 115, 255, 1) 86%
+      );
+
+      &::after {
+        content: "\2713";
+        color: white;
+      }
+    }
+  }
+}

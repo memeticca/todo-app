@@ -1,0 +1,15 @@
+@use "../variables/color-palettes" as colors;
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: colors.$c3;
+  }
+
+  &.active {
+    color: colors.$c5;
+  }
+}

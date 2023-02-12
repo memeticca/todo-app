@@ -1,21 +1,22 @@
 @use "../../variables/color-palettes" as colors;
 
 .todo__main {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
   margin-top: 20px;
   padding: 20px;
   background-color: colors.$c2;
+  border-radius: 10px;
 
   hr {
     margin: 20px;
     border: 1px solid colors.$c4;
   }
 
-  .todo-style {
-    padding: 0;
-  }
-
-  .todo-main-list__todo-title {
-    width: 550px;
-    word-wrap: break-word;
+  @media screen and (max-width: 770px) {
+    & {
+      width: 83vw;
+    }
   }
 }

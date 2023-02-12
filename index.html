@@ -10,36 +10,44 @@
   </head>
 
   <body>
+    <script src="app.js" async defer></script>
     <div class="todo">
       <div class="todo__header">
         <h1>TODO</h1>
-        <button class="todo-header__toggle-color">
+        <button class="interface-icon">
           <img src="images/icon-sun.svg" />
         </button>
       </div>
 
-      <div class="todo-style">
+      <form class="todo__form">
         <input type="checkbox" />
-        <input type="text" placeholder="Create a new todo..." />
-      </div>
+        <input type="text" placeholder="Create a new todo..." required />
+        <button type="submit">Create</button>
+      </form>
 
       <div class="todo__main">
-        <div class="todo-main__list">
-          <div class="todo-style">
+        <div data-filter="all" class="todo-main__list">
+          <div class="todo-item">
             <input type="checkbox" />
-            <p class="todo-main-list__todo-title">Complete online JavaScript course</p>
+            <p class="todo-list__todo-title">
+              Complete online JavaScript course
+            </p>
+            <button class="interface-icon">
+              <img src="images/icon-cross.svg" />
+            </button>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="todo-main__footer">
           <p id="items-count">0 items left</p>
-          <div class="todo-main-footer__filters">
-            <a class="active">All</a>
-            <a>Active</a>
-            <a>Completed</a>
-          </div>
           <a>Clear Completed</a>
         </div>
+      </div>
+
+      <div class="todo__filters">
+        <a class="active">All</a>
+        <a>Active</a>
+        <a>Completed</a>
       </div>
     </div>
   </body>

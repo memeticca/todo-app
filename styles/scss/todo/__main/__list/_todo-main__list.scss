@@ -1,0 +1,30 @@
+@use "../../../variables/color-palettes" as colors;
+
+.todo-main__list {
+  .todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: colors.$c3;
+    cursor: pointer;
+
+    .interface-icon {
+      display: none;
+    }
+
+    &:hover {
+      .interface-icon {
+        display: block;
+        margin-right: 0px;
+        margin-left: auto;
+      }
+    }
+
+    &.checked {
+      .todo-list__todo-title {
+        text-decoration: line-through;
+        color: colors.$c4;
+      }
+    }
+  }
+}
