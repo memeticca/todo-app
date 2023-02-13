@@ -1,4 +1,4 @@
-@use "../variables/color-palettes" as colors;
+@use "../variables/color-palettes";
 
 a {
   font-weight: bold;
@@ -6,10 +6,10 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: colors.$c3;
+    color: var(--c3);
   }
 
   &.active {
-    color: colors.$c5;
+    color: var(--c5);
   }
 }

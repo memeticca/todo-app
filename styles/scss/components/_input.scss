@@ -1,16 +1,16 @@
-@use "../variables/color-palettes" as colors;
+@use "../variables/color-palettes";
 
 input {
   &[type="text"] {
     width: 100%;
     appearance: none;
     font-size: inherit;
-    color: colors.$c3;
+    color: var(--c3);
     background-color: transparent;
     border: none;
 
     &::placeholder {
-      color: colors.$c4;
+      color: var(--c4);
     }
     &:focus {
       outline: none;
@@ -24,12 +24,12 @@ input {
 
     appearance: none;
     text-align: center;
-    border: 1px solid colors.$c4;
+    border: 1px solid var(--c4);
     border-radius: 100%;
     cursor: pointer;
 
     &:hover {
-      border: 1px solid colors.$c5;
+      border: 1px solid var(--c5);
     }
 
     &:checked {

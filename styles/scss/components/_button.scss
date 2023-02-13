@@ -1,14 +1,18 @@
-@use "../variables/color-palettes" as colors;
+@use "../variables/color-palettes";
 
 button {
   font-weight: bold;
   font-size: 16px;
-  color: colors.$c4;
+  color: var(--c4);
   background-color: transparent;
   border: none;
   cursor: pointer;
 
   &:hover {
-    color: colors.$c3;
+    color: var(--c3);
+  }
+
+  &:active {
+    color: var(--c5);
   }
 }

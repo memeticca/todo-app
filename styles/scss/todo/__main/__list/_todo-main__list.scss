@@ -1,12 +1,22 @@
-@use "../../../variables/color-palettes" as colors;
+@use "../../../variables/color-palettes";
 
 .todo-main__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  color: var(--c4);
+
   .todo-item {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: colors.$c3;
+    color: var(--c3);
     cursor: pointer;
+
+    &.hidden {
+      display: none;
+    }
 
     .interface-icon {
       display: none;
@@ -23,7 +33,7 @@
     &.checked {
       .todo-list__todo-title {
         text-decoration: line-through;
-        color: colors.$c4;
+        color: var(--c4);
       }
     }
   }

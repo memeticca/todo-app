@@ -1,4 +1,4 @@
-@use "../../../variables/color-palettes" as colors;
+@use "../../../variables/color-palettes";
 
 .todo-main__footer {
   display: flex;
@@ -6,5 +6,5 @@
   
   margin-top: auto;
   margin-bottom: 0;
-  color: colors.$c4;
+  color: var(--c4);
 }

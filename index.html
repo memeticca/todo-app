@@ -9,45 +9,39 @@
     <link rel="stylesheet" href="styles/css/style.css" />
   </head>
 
-  <body>
+  <body data-theme="dark">
     <script src="app.js" async defer></script>
+
+    <img class="background-image" src="images/bg-desktop-dark.jpg">
+
     <div class="todo">
       <div class="todo__header">
         <h1>TODO</h1>
-        <button class="interface-icon">
+        <button class="interface-icon" onclick="toggleTheme()">
           <img src="images/icon-sun.svg" />
         </button>
       </div>
 
       <form class="todo__form">
-        <input type="checkbox" />
-        <input type="text" placeholder="Create a new todo..." required />
+        <input id="todo-checkmark" type="checkbox" />
+        <input id="todo-title" type="text" placeholder="Create a new todo..." required />
         <button type="submit">Create</button>
       </form>
 
       <div class="todo__main">
-        <div data-filter="all" class="todo-main__list">
-          <div class="todo-item">
-            <input type="checkbox" />
-            <p class="todo-list__todo-title">
-              Complete online JavaScript course
-            </p>
-            <button class="interface-icon">
-              <img src="images/icon-cross.svg" />
-            </button>
-          </div>
+        <div class="todo-main__list">
         </div>
         <hr />
         <div class="todo-main__footer">
           <p id="items-count">0 items left</p>
-          <a>Clear Completed</a>
+          <a onclick="clearCompleted()">Clear Completed</a>
         </div>
       </div>
 
       <div class="todo__filters">
-        <a class="active">All</a>
-        <a>Active</a>
-        <a>Completed</a>
+        <a class="active" onclick="changeFilter(this)">All</a>
+        <a onclick="changeFilter(this)">Active</a>
+        <a onclick="changeFilter(this)">Completed</a>
       </div>
     </div>
   </body>

@@ -1,4 +1,4 @@
-@use "../../variables/color-palettes" as colors;
+@use "../../variables/color-palettes";
 
 .todo__main {
   display: flex;
@@ -6,12 +6,13 @@
   width: 40rem;
   margin-top: 20px;
   padding: 20px;
-  background-color: colors.$c2;
+  background-color: var(--c2);
   border-radius: 10px;
+  box-shadow: .1px .1px 10px black;
 
   hr {
     margin: 20px;
-    border: 1px solid colors.$c4;
+    border: 1px solid var(--c4);
   }
 
   @media screen and (max-width: 770px) {

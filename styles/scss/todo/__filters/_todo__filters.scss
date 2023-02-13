@@ -1,11 +1,11 @@
-@use "../../variables/color-palettes" as colors;
+@use "../../variables/color-palettes";
 
 .todo__filters {
   position: absolute;
   bottom: 10px;
   left: 48%;
   transform: translate(-50%, -50%);
-  color: colors.$c4;
+  color: var(--c4);
 
   @media screen and (max-width: 625px) {
     position: static;
@@ -14,7 +14,7 @@
     margin-top: 20px;
     text-align: center;
     padding: 20px;
-    background-color: colors.$c2;
+    background-color: var(--c2);
     border-radius: 10px;
   }
 }
