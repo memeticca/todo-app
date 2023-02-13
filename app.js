@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable arrow-body-style */
-
 const body = document.querySelector("body");
 const backgroundImage = document.querySelector(".background-image");
 const todoList = document.querySelector(".todo-main__list");
@@ -65,12 +62,8 @@ const updateData = () => {
 
 const generateTodoHtml = (todo) => {
   return `
-    <div class="${todo.checkmark ? "todo-item checked" : "todo-item"} ${
-    isFiltered(todo.checkmark) ? "hidden" : ""
-  }">
-      <input type="checkbox" ${
-        todo.checkmark ? "checked" : ""
-      } onchange=toggleCheckmark(this.parentNode)>
+    <div class="${todo.checkmark ? "todo-item checked" : "todo-item"} ${isFiltered(todo.checkmark) ? "hidden" : ""}">
+      <input type="checkbox" ${todo.checkmark ? "checked" : ""} onchange=toggleCheckmark(this.parentNode)>
       <p class="todo-list__todo-title">
         ${todo.title}
       </p>
